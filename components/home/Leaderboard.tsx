@@ -57,9 +57,7 @@ const Leaderboard = ({ onBotClick }: { onBotClick: (bot: Bot) => void }) => {
       <div className="container mx-auto px-4">
         <h2 className="text-neonGreen text-3xl font-bold mb-4">Leaderboard</h2>
         <div className="flex justify-between mb-4">
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4`}
-          >
+          <div className={`flex gap-4`}>
             {/* toggle for view */}
             <button
               onClick={() => setView("grid")}
@@ -78,7 +76,7 @@ const Leaderboard = ({ onBotClick }: { onBotClick: (bot: Bot) => void }) => {
               Table
             </button>
           </div>
-          <div className="flex">
+          <div className="flex items-center">
             <label htmlFor="sort" className="text-primary text-lg mr-2">
               Sort by:
             </label>
